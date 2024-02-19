@@ -1,11 +1,12 @@
 import mongoose from "mongoose"
+import { displayData } from "../controllers/displayData.controller.js";
 
 const fetchDataFromDatabase = (collectionName) => {
     const fetched_data = mongoose.connection.db.collection(collectionName);
     fetched_data.find({}).toArray() 
     .then(data => {
         global.collectionName = data;
-        // console.log(`Data from ${collectionName} collection:`, global.collectionName);
+        displayData(global.collectionName);
       })
       .catch(error => {
         console.log("Error fetching data:", error);
