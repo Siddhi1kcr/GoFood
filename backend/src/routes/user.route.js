@@ -2,7 +2,7 @@ import { Router } from "express";
 import { logoutUser,loginUser, registerUser, refreshAccessToken,changeCurrentPassword,updateAccountDetails } from "../controllers/user.controller.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 import { foodData } from "../controllers/foodData.controller.js";
-import { OrderData } from "../controllers/orderData.controller.js";
+import { OrderData, myOrderData } from "../controllers/orderData.controller.js";
 
 const router = Router();
 
@@ -18,8 +18,10 @@ router.route("/change-password").post(verifyJWT,changeCurrentPassword)
 
 router.route("/update-account-details").post(verifyJWT,updateAccountDetails)
 
-router.route("/foodData").post(foodData);
+router.route("/foodData").post(foodData)
 
 router.route("/OrderData").post(OrderData)
+
+router.route("/myOrderData").post(myOrderData)
 
 export default router

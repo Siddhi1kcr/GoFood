@@ -35,5 +35,14 @@ const OrderData = async ( req ,res) => {
     }
 }
 
-export {OrderData}
+const myOrderData = async(req,res) => {
+     try {
+        let myData = await Order.findOne({'email': req.body.email})
+        res.json({orderData : myData})
+     } catch (error) {
+        console.log(error)
+     }
+}
+
+export {OrderData, myOrderData}
 
