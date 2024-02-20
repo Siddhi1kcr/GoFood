@@ -17,6 +17,7 @@ export default function Login() {
         })
       })
       localStorage.setItem('user', response.data)
+      localStorage.setItem('userEmail', credentials.email)
       const message = await response.json();
       console.log(message);
       navigate("/");
