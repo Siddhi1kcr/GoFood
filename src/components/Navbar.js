@@ -4,6 +4,10 @@ import Badge from "react-bootstrap/Badge";
 import Modal from "../modal";
 import Cart from "../pages/Cart";
 import { useCart } from "./ContextReducer";
+import login from "../icons/login.svg";
+import logo from "../icons/food.svg"
+import cart from "../icons/cart.svg"
+import search from "../icons/search.svg"
 
 export default function Navbar() {
   const [cartView, setcartView] = useState(false);
@@ -16,10 +20,11 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div className="container-fluid">
           <Link className="navbar-brand fs-1 fst-italic mx-3" to="/">
-            GoFood
+            <img id="logo" src={logo}/>
+            Foodie's
           </Link>
           <button
             className="navbar-toggler"
@@ -33,20 +38,38 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto mb-2">
+            <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <Link
-                  className="nav-link active fs-5 mx-4"
+                  className="nav-link active fs-5 mx-5"
                   aria-current="page"
                   to="/"
                 >
                   Home
                 </Link>
               </li>
+              <li>
+              <Link
+                  className="nav-link  fs-5 mx-5"
+                  aria-current="page"
+                  to="/"
+                >
+                  Menu
+                </Link>
+                </li>
+                <li>
+                <Link
+                  className="nav-link fs-5 mx-5"
+                  aria-current="page"
+                  to="/"
+                >
+                  About us
+                </Link>
+                </li>
               {localStorage.getItem("user") ? (
                 <li className="nav-item">
                   <Link
-                    className="nav-link active fs-5"
+                    className="nav-link fs-5 mx-5"
                     aria-current="page"
                     to="/myOrderData"
                   >
@@ -59,23 +82,23 @@ export default function Navbar() {
             </ul>
             {!localStorage.getItem("user") ? (
               <div className="d-flex">
-                <Link className="btn bg-white text-success mx-1" to="/login">
+              <img src={search} id="search" />
+                <Link id="login-btn" to="/login">
+                <img id="login" src={login}/>
                   Login
-                </Link>
-                <Link className="btn bg-white text-success mx-1" to="/signup">
-                  SignUp
                 </Link>
               </div>
             ) : (
               <div className="d-flex">
+              
                 <div className="btn bg-white text-success mx-2" onClick={() => {setcartView(true)}}>
-                  My Cart{" "}
+                <img src={cart} id="cart" />
                   <Badge pill bg="danger"> {data.length} </Badge>
                 </div>
                 {cartView?<Modal onClose={() => {setcartView(false)}}><Cart/></Modal>:null}
-                <div className="btn bg-white text-danger mx-2" onClick={handleLogout}>
+                <button id="logout-btn" onClick={handleLogout}>
                   Logout
-                </div>
+                </button>
               </div>
             )} 
           </div>
@@ -84,3 +107,10 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+/*
+                <Link className="btn bg-white text-success mx-1" to="/signup">
+                  SignUp
+                </Link>
+                */

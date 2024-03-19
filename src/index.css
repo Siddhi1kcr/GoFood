@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,6 +14,232 @@ code {
     monospace;
 }
 
-#carousel{
-  max-height: 500px;
+/* .carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-inner{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.cards {
+  width: calc(100% / 3); 
+  flex: 0 0 auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+*/
+/* .carousel-item{
+  width:40rem;
+}  */
+
+.carousel-inner {
+  padding: 5%;
+}
+.cards {
+  margin: 0 3em;
+  border: none !important;
+  text-align: center;
+  width: 20em;
+  height: 30em !important;
+}
+.btn-primary{
+  background-color: #eb0029 !important;
+  border: none !important;
+  font-size: 20px !important;
+  border-radius: 35px !important;
+  padding-left: 25px !important;
+  margin-top: 10px !important;
+}
+
+.cards-body h5{
+  margin-top: -2em;
+  font-size: 1.7em;
+}
+.carousel-control-prev{
+  background-color: #eb0029 !important;
+  width: 6vh !important;
+  height: 6vh !important;
+  border-radius: 50%;
+  transform: translateY(-0%);
+  margin-top: 17em;
+  margin-left: 2.5em;
+}
+.carousel-control-next {
+  background-color: #eb0029 !important;
+  width: 6vh !important;
+  height: 6vh !important;
+  border-radius: 50%;
+  transform: translateY(-0%);
+  margin-top: 17em;
+  margin-right: 2.5em;
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+@media screen and (min-width: 576px) {
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+.cards .img-wrapper {
+    max-width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards img {
+    max-height: 80%;
+}
+/* @media (max-width: 767px) {
+  .cards .img-wrapper {
+    height: 7em;
+  }
+} */
+
+.img-wrapper img{
+  border-radius: 50% !important;
+
+}
+
+#carousel-inner{
+  max-height: 300px;
+}
+
+#logo{
+  height: 38px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#login{
+  height: 25px;
+  margin-right: 5px;
+}
+
+#login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb0029;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#orders-heading{
+  font-family: Lobster Two, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+
+
+#logout-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb0029;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#navbarNav{
+  margin-left: 250px;
+}
+
+#cart{
+  height: 35px;
+  margin-right: -14px;
+  /* margin-right: 35px; */
+}
+#search{
+  height: 35px;
+  margin-right: 35px;
+  margin-top: 7px;
+}
+
+#foodBowl{
+  height: 800px;
+  margin-right: -180px;
+}
+
+#frontPage{
+  margin: 150px -100px 100px 120px;
+}
+
+#pick-line{
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+#design-food{
+  color: #eb0029;
+  font-size: 70px;
+  font-family: Lobster Two, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#order-now{
+  margin-top: 50px;
+  background-color:  #eb0029;
+  color: white;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  border:  none;
+}
+
+#arrows{
+  height: 30px;
+  margin-bottom: 4px;
+}
+
+
+#myorder-page{
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+}
+#full-page{
+  background-color: #E8E8E8;
+  margin-bottom: 0;
+}
+
+#backarrow{
+  height: 50px;
+  margin-top: 34px;
 }
