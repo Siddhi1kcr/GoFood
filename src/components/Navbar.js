@@ -6,7 +6,7 @@ import Cart from "../pages/Cart";
 import { useCart } from "./ContextReducer";
 import login from "../icons/login.svg";
 import logo from "../icons/food.svg"
-import cart from "../icons/cart.svg"
+import cart from "../icons/cart.png"
 import search from "../icons/search.svg"
 
 export default function Navbar() {

@@ -1,0 +1,32 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.explore-menu-text{
+    text-align: center;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 80px;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    height : 200px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.explore-menu-list-item p{
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}

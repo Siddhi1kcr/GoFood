@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-    font-family: poppins, sans-serif;
+    sans-serif;
+    
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -128,6 +128,13 @@ code {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+#logo-footer{
+  height: 38px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 39px;
+}
 
 #login{
   height: 25px;
@@ -145,7 +152,7 @@ code {
   border-radius: 100px;
   text-align: center;
   font-size: 18px;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -171,7 +178,7 @@ code {
   border: none;
   text-align: center;
   font-size: 18px;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -180,7 +187,7 @@ code {
 }
 
 #cart{
-  height: 35px;
+  height: 32px;
   margin-right: -14px;
   /* margin-right: 35px; */
 }
@@ -191,12 +198,12 @@ code {
 }
 
 #foodBowl{
-  height: 800px;
-  margin-right: -180px;
+  height: 700px;
+  /* margin-right: -100px; */
 }
 
 #frontPage{
-  margin: 150px -100px 100px 120px;
+  margin: 150px -10px 100px 120px;
 }
 
 #pick-line{
@@ -223,6 +230,14 @@ code {
   border:  none;
 }
 
+#email-now{
+  background-color: white;
+  color: black;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
 #arrows{
   height: 30px;
   margin-bottom: 4px;
@@ -242,4 +257,68 @@ code {
 #backarrow{
   height: 50px;
   margin-top: 34px;
+}
+
+#textColor{
+  color: #eb0029;
+}
+
+#illustrations{
+  height: 250px;
+}
+#illustrations-2{
+  height: 200px;
+  margin-bottom: 48px;
+}
+#ul-serve{
+  list-style: none;
+}
+
+#chef-img{
+  height: 500px;
+  margin-left: 100px;
+}
+#message{
+  margin-left: 70px;
+  margin-right: 120px;
+}
+
+#testimonials{
+  margin: 30px 80px;
+  margin-top: 120px;
+  border: black;
+  border-radius: 10px;
+  border-width: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#customer{
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+#star{
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+#star2{
+  height: 23px;
+  margin-right: 10px;
+  margin-top: 19px;
+}
+
+.col{
+  width: 280px !important;
+  margin-left: 30px !important;
+}
+
+.col2{
+  width: 250px !important;
+  margin-left: 50px !important;
+}
+
+#footer{
+  margin: 0 !important;
 }
