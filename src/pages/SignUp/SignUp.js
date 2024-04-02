@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import "../SignUp/SignUp.css";
+import logo from '../../icons/food.svg'
 
 export default function Signup() {
   const [credentials,setCredentials] = useState({username:"",email:"",password:"",location:""});
@@ -26,27 +28,44 @@ export default function Signup() {
     setCredentials({...credentials,[e.target.name]:e.target.value});
   }
   return (
-    <div className='container'>
-    <form onSubmit={handleSubmit}>
-    <div className="mb-3">
+    <div className="bg">
+    <div className="welcomepic">
+        <h1>Unleash Your Taste Buds!</h1>
+      </div>
+      <div className="login">
+          <Link className="navbar-brand fst-italic" id="brand-name">
+            <img id="logo-pic" src={logo}/>
+            Foodie's
+          </Link>
+        <h1>WELCOME!</h1>
+        <h3>Signup to continue</h3>
+    <form onSubmit={handleSubmit} className="form-box">
+    <div className="details">
       <label htmlFor="exampleInputusername" className="form-label">Username</label>
       <input type="text" className="form-control" id="exampleInputEmail" onChange={onchange} name='username' value={credentials.username}/>
     </div>
-    <div className="mb-3">
-      <label htmlFor="exampleInputEmail" className="form-label">Email</label>
+    <div className="details">
+      <label htmlFor="exampleInputEmail" className="pass-label">Email</label>
       <input type="email" className="form-control" id="exampleInputEmail" onChange={onchange} name='email' value={credentials.email}/>
     </div>
-    <div className="mb-3">
-      <label htmlFor="exampleInputPassword" className="form-label">Password</label>
+    <div className="details">
+      <label htmlFor="exampleInputPassword" className="pass-label">Password</label>
       <input type="password" className="form-control" id="exampleInputPassword" onChange={onchange} name='password' value={credentials.password}/>
     </div>
-    <div className="mb-3">
-      <label htmlFor="exampleInputAddress" className="form-label">Address</label>
+    <div className="details">
+      <label htmlFor="exampleInputAddress" className="pass-label">Address</label>
       <input type="text" className="form-control" id="exampleInputAddress" onChange={onchange} name='location' value={credentials.location}/>
     </div>
-    <button type="submit" className="btn btn-success">Submit</button>
-    <Link to="/login" className='btn btn-danger m-3'>Already a user!</Link>
+    <div className="btns">
+          <button type="submit" className="buttn" >
+            Submit
+          </button>
+          <Link to="/Login" className="buttn2">
+            Already a User!
+          </Link>
+          </div>
   </form>
+    </div>
     </div>
   )
 }

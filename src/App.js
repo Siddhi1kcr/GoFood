@@ -5,8 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import Home from './pages/Home';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp.js';
+import Login from './pages/login/Login.js';
+import SignUp from './pages/SignUp/SignUp.js';
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';

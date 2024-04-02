@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    display: flex;
+    height: 100vh;
+    font-family: Lobster Two, sans-serif;
+}
+
+.welcomepic{
+    height: 100vh;
+    width: 45rem;
+    position: relative;
+    display: flex;
+}
+.welcomepic::before{
+    content: "";
+    background: url(../../images/food-background.jpg) no-repeat center top / cover;
+    position: absolute;
+    filter: grayscale(20%);
+    width: 110%;
+    height: 100vh;
+    z-index: -1;
+}
+.welcomepic h1{
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    margin: 200px;
+    margin-left: 240px;
+}
+.login{
+    height: 100vh;
+    width: 49rem;
+    display: flex;
+    flex-direction: column;
+}
+.login h1{
+    margin-left: 10rem;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+.login h3{
+    margin-left: 10rem;
+    color: #eb0029;
+    margin-top: 0.5rem;
+}
+.form-label{
+    margin-top: 50px;
+    /* margin-left: 5rem; */
+}
+.pass-label{
+    margin-top: 20px;
+    
+}
+input{
+    height: 2rem;
+    margin-right: 10rem;
+}
+.btns{
+    display: flex;
+}
+#logo-pic{
+    height: 50px;
+    margin-left: 21rem;
+}
+#brand-name{
+    color: black;
+    font-size: 52px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+}
+.buttn{
+    margin-top: 40px;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: #eb0029;
+    color: white;
+}
+.buttn2{
+    margin-top: 40px;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    text-decoration: none;
+    background-color: #eb0029;
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    padding-top: 8px;
+}
+.buttn:hover{
+    background-color: black;
+    color: #eb0029;
+}
+.buttn2:hover{
+    background-color: black;
+    color: #eb0029;
+}
+.form-box{
+    margin: 0 10rem;
+}

@@ -5,6 +5,7 @@
 }
 .explore-menu-text{
     text-align: center;
+    margin-top: -33px;
 }
 .explore-menu-list{
     display: flex;
@@ -12,21 +13,45 @@
     align-items: center;
     gap: 30px;
     text-align: center;
-    margin: 20px 80px;
+    margin: 20px 30px;
     overflow-x: scroll;
+    transition: transform 0.3s ease;
+    
+}
+.explore-menu-list-item img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .explore-menu-list::-webkit-scrollbar{
     display: none;
 }
 .explore-menu-list-item img{
     height : 200px;
-    padding: 10px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: transform 0.5s;
+    padding: 10px;
 }
 
 .explore-menu-list-item p{
     margin-top: 10px;
     font-size: 22px;
+    cursor: pointer;
+    
+}
+.scroll-wrap{
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    height: 40px;
+    margin-right: 110px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.back-arrow{
+    height: 40px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+    margin-right: 20px;
     cursor: pointer;
 }
