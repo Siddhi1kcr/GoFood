@@ -16,6 +16,7 @@ import chef from "../images/chef.png";
 import star from "../images/star.png";
 import star2 from "../images/star2.png";
 import customer from "../images/customer.jpg";
+
 export default function Home() {
   // const [search,setsearch] = useState('');
   // // value={search} onChange={(e)=>setsearch(e.target.value)}

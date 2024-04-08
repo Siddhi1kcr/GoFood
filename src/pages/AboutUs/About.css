@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.bg-about{
+    height:  100vh;
+    width: 100vw;
+    position: relative;
+}
+.bg-about::before{
+    content: "";
+    background: url(../../images/bg-about.jpg) no-repeat top center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.back{
+    height: 100px;
+    padding-left: 1350px;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.bg-about h1{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 200px;
+    padding-left: 390px;
+    font-family: Lobster Two, sans-serif;
+    color: white;
+}
+.bg-about p{
+    text-align: center;
+    padding-left: 750px;
+    font-size: 50px;
+    font-family: Lobster Two, sans-serif;
+    color: white;
+}
+.aboutus{
+    display: flex;
+    margin: 100px;
+    height: 500px;
+}
+.about-text{
+    padding: 1.5rem 4.4rem;
+    width: 50%;
+}
+.about-text h1{
+    font-family: Lobster Two, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #eb0029;
+}
+.about-text p{
+    font-size: 20px;
+    padding: 20px 0px 0px 10px;
+    font-family: Lobster Two, sans-serif;
+    width: 550px;
+}
+.chefs{
+    height: 400px;
+    padding-left: 70px;
+    z-index: -1;
+}
+.chefs2{
+    height: 280px;
+    padding-left: 250px;
+    margin-top: -140px;
+}
+
+.outreach{
+    height: 30rem;
+    width: 100vw;  
+    position: relative;
+}
+.outreach::before{
+    content: "";
+    background: url(../../images/Connect1.jpg) no-repeat top center/cover;
+    position: absolute;
+    filter: grayscale(65%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.outreach h1{
+    font-size: 3rem;
+    padding: 40px 0 0 0;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.outreach h1:hover{
+    color: #eb0029;
+}
+.boxes{
+    display: flex;
+}
+.box{
+    height: 11rem;
+    width: 24rem;
+    border: 0.1rem solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    margin: 5rem 5rem;
+}
+.box h2{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box h1{
+    font-size: 4rem;
+    padding: 0.5rem 0 0 0;
+}
+/* 
+.fbox1{
+    height: 25rem;
+    width: 30vw;
+    background-color: #30475E;
+    display: flex;
+}
+.fbox2{
+    height: 25rem;
+    width: 69%;
+    background-color: white;
+    display: flex;
+}
+#flogo{
+    margin: 22%;
+    margin-top: 40%;
+    margin-right: 0;
+}
+#fname{
+    margin-top: 38%;
+    margin-left: 3%;
+}
+#fname h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.items h3{
+    color: #F05454;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4rem 0 1rem 7rem;
+    font-weight: bold;
+}
+.points{
+    margin:1rem 0 0 7rem;
+}
+.points a{
+    color: #30475E;
+}
+.points a:hover{
+    color: black;
+    transition: 0.3s ease;
+    text-decoration: underline;
+}
+.fbox2 i{
+    margin: 7rem 0rem 0 4rem;
+}
+.iconsNcall{
+    display: flex;
+    flex-direction: column;
+}
+.callus{
+    height: 6rem;
+    width: 22rem;
+    border: 3px solid #30475E;
+    margin: 3rem 0 0 4rem;
+    display: flex;
+    border-radius: 20px;
+}
+.callus i{
+    margin: 3rem 0 0 2rem;
+}
+.callus h3{
+    margin: 1.5rem 0 0 2rem;
+}
+.copyright{
+    color: #F05454;
+}
+.copyright h4{
+    margin: 5rem 0 0 11rem;
+}
+.icons{
+    margin-left: 2rem;
+} */

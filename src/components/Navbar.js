@@ -61,7 +61,7 @@ export default function Navbar() {
                 <Link
                   className="nav-link fs-5 mx-5"
                   aria-current="page"
-                  to="/"
+                  to="/about"
                 >
                   About us
                 </Link>

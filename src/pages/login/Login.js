@@ -32,7 +32,7 @@ export default function Login() {
       <div className="welcomepic">
         <h1>Unleash Your Taste Buds!</h1>
       </div>
-      <div className="login">
+      <div className="login2">
           <Link className="navbar-brand fst-italic" id="brand-name">
             <img id="logo-pic" src={logo}/>
             Foodie's
@@ -71,7 +71,7 @@ export default function Login() {
             Submit
           </button>
           <Link to="/signup" className="buttn2">
-            Signup
+            SignUp!
           </Link>
           </div>
           
