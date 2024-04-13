@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate} from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+import './Navbar.css'
 import Badge from "react-bootstrap/Badge";
-import Modal from "../modal";
-import Cart from "../pages/Cart";
+import Modal from "../../modal";
+import Cart from "../../pages/Cart/Cart";
 import { useCart } from "./ContextReducer";
 import login from "../icons/login.svg";
 import logo from "../icons/food.svg"
@@ -54,7 +56,7 @@ export default function Navbar() {
                   aria-current="page"
                   to="/"
                 >
-                  Menu
+                <ScrollLink to="food-slider" smooth={true} duration={200}>Menu</ScrollLink>
                 </Link>
                 </li>
                 <li>
@@ -107,10 +109,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-
-/*
-                <Link className="btn bg-white text-success mx-1" to="/signup">
-                  SignUp
-                </Link>
-                */

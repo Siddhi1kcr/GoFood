@@ -1,0 +1,19 @@
+#logo-footer{
+    height: 38px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 39px;
+}
+
+#footer{
+    margin: 0 !important;
+}
+
+#email-now{
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 30px;
+  }

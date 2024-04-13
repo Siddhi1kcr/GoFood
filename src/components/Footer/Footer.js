@@ -1,4 +1,5 @@
 import React from "react";
+import './Footer.css'
 import { Link } from "react-router-dom";
 import logo from "../icons/food.svg";
 
@@ -119,8 +120,3 @@ export default function Footer() {
   );
 }
 
-// <ul className="list-unstyled d-flex">
-//   <li className="ms-3"><Link className="link-dark" to="#"><svg className="bi" width="24" height="24"><use xlink:to="#twitter"></use></svg></Link></li>
-//   <li className="ms-3"><Link className="link-dark" to="#"><svg className="bi" width="24" height="24"><use xlink:to="#instagram"></use></svg></Link></li>
-//   <li className="ms-3"><Link className="link-dark" to="#"><svg className="bi" width="24" height="24"><use xlink:to="#facebook"></use></svg></Link></li>
-// </ul>

@@ -2,13 +2,14 @@ import React from "react";
 // import  { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 // import Card from "../components/Card";
 import { useState } from "react";
-import Modal from "../modal";
+import Modal from "../../modal";
 import Cart from "../pages/Cart";
 import foodBowl from "../images/foodBowl.jpg";
 import arrows from "../icons/arrows.svg";
-import FoodSlider from "../components/FoodSlider/FoodSlider";
+import FoodSlider from "../../components/FoodSlider/FoodSlider";
 import onlineorder from "../images/online-order.png";
 import deliveryboy from "../images/delivery-boy.png";
 import waiter from "../images/waiter.png";
@@ -60,6 +61,7 @@ export default function Home() {
             onClick={() => {
               setcartView(true);
             }}
+            
           >
             ORDER NOW <img id="arrows" src={arrows} />
           </button>
@@ -75,7 +77,7 @@ export default function Home() {
         </div>
         <img src={foodBowl} id="foodBowl" />
       </div>
-      <div>
+      <div id="food-slider" >
         <FoodSlider />
       </div>
       <div className="mt-5 ">
