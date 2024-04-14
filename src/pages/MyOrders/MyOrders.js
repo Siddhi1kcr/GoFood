@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Footer from '../components/Footer';
-import arrows from "../icons/arrows.svg"
-import backarrow from "../images/arrow.png";
+import Footer from '../../components/Footer/Footer';
+import arrows from "../../icons/arrows.svg"
+import backarrow from "../../images/arrow.png";
 import {Link} from "react-router-dom";
+import './MyOrders.css'
 
 export default function MyOrders() {
 
@@ -43,7 +44,7 @@ export default function MyOrders() {
         <div id="full-page" className='container'>
         <div className='d-flex'>
            <Link to="/">
-           <img src={backarrow} id="backarrow"/>
+           <img src={backarrow} id="backarrow" alt='arrow'/>
            </Link>
             <div id="orders-heading">
                Your Orders
@@ -62,7 +63,7 @@ export default function MyOrders() {
                                                     {arrayData.Order_date ?<div> <div className='m-auto mt-5 d-flex justify-content-between'  >
                                                       <div className='fs-4 mx-4 my-1'> <em>Delivered on</em>  - {data = arrayData.Order_date}</div>
                                                       <div className='mx-5'>
-                                                       <button id="order-now" className='m-0 px-4 py-2'>Reorder<img id="arrows" src={arrows}/></button>
+                                                       <button id="order-now" className='m-0 px-4 py-2'>Reorder<img id="arrows" alt='arr' src={arrows}/></button>
                                                        </div>
                                                         
                                                     </div><hr /></div> :

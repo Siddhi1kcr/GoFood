@@ -4,14 +4,14 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from './pages/Home';
+import Home from './pages/Home/Home.js';
 import Login from './pages/login/Login.js';
 import SignUp from './pages/SignUp/SignUp.js';
-import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
+// import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
-import { CartProvider } from './components/ContextReducer.js';
-import MyOrders from './pages/MyOrders.js';
+import { CartProvider } from './components/ContextReducer/ContextReducer.js';
+import MyOrders from './pages/MyOrders/MyOrders.js';
 import About from './pages/AboutUs/About.js';
 
 function App() {

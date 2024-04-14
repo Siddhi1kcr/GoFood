@@ -5,11 +5,11 @@ import './Navbar.css'
 import Badge from "react-bootstrap/Badge";
 import Modal from "../../modal";
 import Cart from "../../pages/Cart/Cart";
-import { useCart } from "./ContextReducer";
-import login from "../icons/login.svg";
-import logo from "../icons/food.svg"
-import cart from "../icons/cart.png"
-import search from "../icons/search.svg"
+import { useCart } from "../ContextReducer/ContextReducer";
+import login from "../../icons/login.svg";
+import logo from "../../icons/food.svg"
+import cart from "../../icons/cart.png"
+import search from "../../icons/search.svg"
 
 export default function Navbar() {
   const [cartView, setcartView] = useState(false);

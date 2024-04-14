@@ -1,22 +1,22 @@
 import React from "react";
 // import  { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 // import Card from "../components/Card";
 import { useState } from "react";
 import Modal from "../../modal";
-import Cart from "../pages/Cart";
-import foodBowl from "../images/foodBowl.jpg";
-import arrows from "../icons/arrows.svg";
+import Cart from "../../pages/Cart/Cart";
+import foodBowl from "../../images/foodBowl.jpg";
+import arrows from "../../icons/arrows.svg";
 import FoodSlider from "../../components/FoodSlider/FoodSlider";
-import onlineorder from "../images/online-order.png";
-import deliveryboy from "../images/delivery-boy.png";
-import waiter from "../images/waiter.png";
-import chef from "../images/chef.png";
-import star from "../images/star.png";
-import star2 from "../images/star2.png";
-import customer from "../images/customer.jpg";
+import onlineorder from "../../images/online-order.png";
+import deliveryboy from "../../images/delivery-boy.png";
+import waiter from "../../images/waiter.png";
+import chef from "../../images/chef.png";
+import star from "../../images/star.png";
+import star2 from "../../images/star2.png";
+import customer from "../../images/customer.jpg";
 
 export default function Home() {
   // const [search,setsearch] = useState('');

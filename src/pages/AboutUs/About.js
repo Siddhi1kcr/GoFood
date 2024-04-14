@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
-import founder from "../../images/siddhi.jpeg";
+import Footer from "../../components/Footer/Footer";
 import backarrow from "../../images/back-button.png";
 import "../AboutUs/About.css";
 import chefs from "../../images/chefs.jpg";
