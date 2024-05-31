@@ -1,10 +1,7 @@
 import React from "react";
-// import  { useEffect, useState } from "react";
+import  {useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-
-// import Card from "../components/Card";
-import { useState } from "react";
 import Modal from "../../modal";
 import Cart from "../../pages/Cart/Cart";
 import foodBowl from "../../images/foodBowl.jpg";
@@ -17,8 +14,10 @@ import chef from "../../images/chef.png";
 import star from "../../images/star.png";
 import star2 from "../../images/star2.png";
 import customer from "../../images/customer.jpg";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 export default function Home() {
+  const [category, setCategory] = useState("All");
   // const [search,setsearch] = useState('');
   // // value={search} onChange={(e)=>setsearch(e.target.value)}
   // const [food_items, setfood_items] = useState([]);
@@ -79,6 +78,9 @@ export default function Home() {
       </div>
       <div id="food-slider" >
         <FoodSlider />
+      </div>
+      <div>
+        <FoodDisplay category={category} />
       </div>
       <div className="mt-5 ">
         <h4 className="fs-4 d-flex  justify-content-center" id="textColor">
